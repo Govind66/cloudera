@@ -5,7 +5,12 @@
 
 # Schedule the script
 ## Cron Job
+
+### You may have to set the Execute permission on your script first:
+```
+chmod +x /home/govind/db_backup.sh
+```
 ```
 crontab -e
-0 0 * * * /home/centos/cron/backup-db.sh > /dev/null 2>&1
+0 0 * * * /home/govind/cron/db_backup.sh > /dev/null 2>&1
 ```
