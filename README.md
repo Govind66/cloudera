@@ -6,10 +6,12 @@
 # Schedule the script
 ## Cron Job
 
-### You may have to set the Execute permission on your script first:
+You may have to set the Execute permission on your script first:
 ```
 chmod +x /home/govind/db_backup.sh
 ```
+Yes, this has to be run by a cron job (or manually but what would be the point?)
+If you have SSH access to your server:
 ```
 crontab -e
 0 0 * * * /home/govind/cron/db_backup.sh > /dev/null 2>&1
